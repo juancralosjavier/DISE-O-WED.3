@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Fecha de Caducidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos">
+      <td>{{ producto.nombre }}</td>
+      <td>{{ producto.precio | currency:'USD':'symbol':'1.2-2' }}</td>
+      <td>{{ producto.fecha | date:'dd/MM/yyyy' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+  
+  
